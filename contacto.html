@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/yapu.ico" />
+    <title>Contacto - YAPU Solutions</title>
+</head>
+
+<body>
+    <div class="jm-loadingpage">
+        <img src="assets/images/logo-yapu-blanco.png" alt="logo-yapu">
+        <lottie-player src="https://assets9.lottiefiles.com/datafiles/w8kbBwzPRk7sTCe/data.json" background="#8c8c8c" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+    <!-- ************************* Header Starts Here ************************** -->
+    <div class="info-top">
+        <div class="container">
+            <img src="assets/images/cel.svg" alt="cel">
+            <p>(+51) 982 585 743</p>
+            <img src="assets/images/send.svg" alt="send">
+            <p>informes@yapu.pe</p>
+            <a id="en" class="enlaces-menu js-translate" style="cursor:pointer;"><img class="flag-lang" src="assets/images/eng.svg" /></a>
+            <a id="es" class="enlaces-menu js-translate" style="cursor:pointer;"><img class="flag-lang" src="assets/images/esp.svg" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/yapusolutionssac/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <header id="menu-jk">
+        <div id="nav-head" class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 no-padding col-sm-12 nav-img">
+                        <a href="index.html"><img class="lo logo-img" src="assets/images/logo-yapu.png" /></a>
+                        <a href="index.html"><img class="lob hid logo-img" src="assets/images/logo-yapu.png" /></a>
+                        <a data-toggle="collapse" data-target="#menu" href="#menu">
+                            <i class="fas d-block d-md-none small-menu fa-bars"></i>
+                        </a>
+                    </div>
+                    <div id="menu" class="col-lg-10 col-md-9 d-none d-md-block nav-item">
+                        <ul>
+                            <li><a key="MENU_INICIO" class="lang enlaces-menu nav-select" href="index.html">Inicio</a></li>
+                            <li><a key="MENU_NOSOTROS" class="lang enlaces-menu" href="nosotros.html">Conócenos</a></li>
+                            <li><a key="MENU_SOLUCIONES" class="lang enlaces-menu" href="soluciones.html">Soluciones</a></li>
+                            <li><a key="MENU_CLIENTES" class="lang enlaces-menu" href="clientes.html">Clientes</a></li>
+                            <li><a key="MENU_CONTACTANOS" class="lang enlaces-menu" href="contacto.html" style="background: #91bf3d;color: #ffffff !important;border:solid 0px;">Contáctanos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ************************* Header End ************************* -->
+
+    <!--  ************************* Slider Starts Here ************************** -->
+
+    <!-- ######## Slider End ####### -->
+
+    <!--  ************************* Contact Us Starts Here ************************** -->
+    <!--  ************************* Location Starts Here ************************** -->
+    <section id="contact" class="contact-us-single" data-aos="zoom-in" style="background: #f0f2f2;">
+        <div class="row sec-title">
+            <h2 key="CONTACT_TITULO" class="lang">Contáctanos</h2>
+        </div>
+        <div class="container">
+            <div class="row si-margin">
+                <div class="col-sm-6 cop-ck">
+                    <h3><b key="LOCATION_TITULO" class="lang">Envíanos tu Mensaje</b></h3>
+                    <form onsubmit="return valida(this)" action="https://formspree.io/informes@yapu.pe" method="POST">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <input key="LOCATION_INPUT_NOMBRE" type="text" name="name" id="full-name" placeholder="Nombre" class="lang form-control input-group-sm" onkeypress="return check(event)" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <input key="LOCATION_INPUT_CORREO" type="email" name="_replyto" id="email-address" placeholder="Correo" class="lang form-control input-group-sm" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <input key="LOCATION_INPUT_CELULAR" type="number" name="_phone" id="number-phone" placeholder="Celular" class="lang form-control input-group-sm" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <textarea key="LOCATION_INPUT_MENSAJE" rows="5" name="message" id="message" placeholder="Mensaje" class="lang form-control input-group-sm"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <button key="LOCATION_BOTON" class="lang btn btn-success btn-group-sm" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6 no-padding">
+                    <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5586.2567781206235!2d-79.03206024981274!3d-8.093319320236223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d9ef5ad6bed%3A0x9713e90946196a63!2sYAPU%20Solutions%20SAC!5e0!3m2!1ses-419!2spe!4v1570650053479!5m2!1ses-419!2spe"
+                        height="380" frameborder="0" style="border:0;" allowfullscreen>
+          </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ######## Location End ####### -->
+    <section id="contact-us2" class="contact-us2 row">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contat-det">
+                        <img src="assets/images/location.svg" alt="">
+                        <p><b key="CONTACT_OFI_2_TITULO" class="lang">Oficina Lima</b></p>
+                        <p>Av. Manuel Olguín #335 - Of. 303,</p>
+                        <p>Santiago de Surco</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contat-det">
+                        <p><b key="CONTACT_OFI_1_TITULO" class="lang">Oficina Trujillo</b></p>
+                        <p>Av. Teodoro Valcárcel #999,</p>
+                        <p>Urb. Santa Leonor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contat-det">
+                        <img src="assets/images/phone.svg" alt="">
+                        <p><b key="CONTACT_TELEFONO_TITULO" class="lang">Teléfono</b></p>
+                        <p>(+51) 982 585 743</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contat-det">
+                        <img src="assets/images/correo.svg" alt="">
+                        <p><b key="CONTACT_CORREO_TITULO" class="lang">Correo Electrónico</b></p>
+                        <p>informes@yapu.pe</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ************************* Copyright Starts Here ************************** -->
+    <div class="copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="assets/images/logo-yapu-blanco.png" alt="">
+                    <p key="FOOTER_COPY" class="lang">© Diseñado por YAPU Solutions | Copyright 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ######## Copyright End ####### -->
+    <button class="botonF1">
+        <img src="assets/images/trabajador-de-call-center-con-auriculares.png" alt="mesa de ayuda">        
+    </button>
+    <div class="contenedorMesa" data-aos="zoom-in">
+        <button class="btnMesa botonF2">
+        <span><a target="_blank" key="LIBRARY_APP" href="http://www.yapu.pe/biblioteca-apps/" class="lang">Biblioteca de Aplicaciones</a></span>
+      </button>
+        <button class="btnMesa botonF3">
+        <span><a target="_blank" key="HELP_DESK" href="https://soporte.yapu.pe" class="lang">Mesa de Ayuda</a></span>
+      </button>
+        <!--<button class="btn botonF4">
+        <span>+</span>
+      </button>
+      <button class="btn botonF5">
+        <span>+</span>
+      </button>-->
+    </div>
+    <a href="https://wa.me/51997542782?text=Estoy%20interesado%20en%20los%20servicios%20de%20YAPU%20Solutions" class="whatsapbuttom" style="text-decoration: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" fill="currentColor"></path>
+      </svg>
+    </a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/lottie-player.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-nav/js/scrolling-nav.js"></script>
+    <script type="text/javascript" src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="assets/js/lazyload.js"></script>
+    <script type="text/javascript" src="assets/js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="assets/js/language/contacto.js"></script>
+</body>
+
+</html>
