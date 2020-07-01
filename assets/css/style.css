@@ -2218,7 +2218,6 @@ header .header-nav .nav-item ul li a {
 }
 
 .btn {
-    text-transform: uppercase;
     font-weight: 400;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2485,7 +2484,7 @@ header .header-nav .nav-item ul li a {
 #modal-imagen {
     float: left;
     width: 90%;
-    max-height: 400px;
+    max-height: 600px;
 }
 
 #content-modal-subtitle {

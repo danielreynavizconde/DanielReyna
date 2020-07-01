@@ -72,18 +72,33 @@ function goToModal(title) {
             $('#content-modal-resume3').text('');
 
             $('#modal-imagen').attr('src', 'assets/images/soluciones/mockup-agritracer.png');
+
+            $('#modal-imagen1').attr('src', '');
+            $('#modal-imagen2').attr('src', '');
+            $('#modal-imagen3').attr('src', '');
+            $('#modal-imagen4').attr('src', '');
+            $('#modal-imagen5').attr('src', '');
+            $('#modal-imagen6').attr('src', '');
+
             $('#verFolleto').attr('href', 'https://agritracer.pe/');
             $('#verFolleto').show();
             break;
 
         case 'WorkAPP':
             item = '2';
-            $('#content-modal-subtitle').text('Aplicación para la comunicación activacon los trabajadores y postulantes.');
-            $('#content-modal-resume1').text('ACCESO A TRABAJADORES: El trabajador puede aportarcon sugerencias y tener acceso a boletas, licencias, vacaciones, comunicados y encuestas');
-            $('#content-modal-resume2').text('ACCESO A EXTERNOS: Permite el registro de los usuariosinteresados en las convocatorias programadas.');
-            $('#content-modal-resume3').text('ADAPTABLEA DISPOSITIVOSMÓVILES: Adaptado a todo tipo de dispositivomóvil.');
+            $('#content-modal-subtitle').text('');
+            $('#content-modal-resume1').text('');
+            $('#content-modal-resume2').text('');
+            $('#content-modal-resume3').text('');
 
-            $('#modal-imagen').attr('src', 'assets/images/soluciones/workapp.jpg');
+            $('#modal-imagen1').attr('src', 'assets/files/workapp1.jpg');
+            $('#modal-imagen2').attr('src', 'assets/files/workapp2.jpg');
+            $('#modal-imagen3').attr('src', 'assets/files/workapp3.jpg');
+            $('#modal-imagen4').attr('src', 'assets/files/workapp4.jpg');
+            $('#modal-imagen5').attr('src', 'assets/files/workapp5.jpg');
+            $('#modal-imagen6').attr('src', 'assets/files/workapp6.jpg');
+
+            $('#modal-imagen').attr('src', '');
             $('#verFolleto').attr('src', 'assets/files/BROCHURE-WorkAPP.pdf');
             $('#verFolleto').hide();
 
@@ -95,7 +110,15 @@ function goToModal(title) {
             $('#content-modal-resume1').text('');
             $('#content-modal-resume2').text('Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.');
             $('#content-modal-resume3').text('Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.');
-            $('#modal-imagen').attr('src', 'assets/images/soluciones/laptop-rhsys.jpg');
+            $('#modal-imagen').attr('src', 'assets/files/workapp1.jpg');
+
+            $('#modal-imagen1').attr('src', '');
+            $('#modal-imagen2').attr('src', '');
+            $('#modal-imagen3').attr('src', '');
+            $('#modal-imagen4').attr('src', '');
+            $('#modal-imagen5').attr('src', '');
+            $('#modal-imagen6').attr('src', '');
+
             $('#verFolleto').attr('href', 'https://rhsys.pe/');
             $('#verFolleto').show();
             break;
