@@ -74,7 +74,14 @@
     <section id="meeting-room" class="meeting-room row ammenties-white">
         <div class="container">
             <div class="row sec-title">
+
                 <img src="assets/images/Soluciones-como-servicio.svg" alt="">
+                <div style="margin-left: 20px;">
+                    <h2 style="color: #91bf3d;text-align: left;"><b key="SOLUCIONES" class="lang">Soluciones</b></h2>
+                    </br>
+                    <h2 style="color: #91bf3d;text-align: left;" key="COMO_SERVICIO" class="lang">como servicio (SaaS)</h2>
+                </div>
+
             </div>
             <div class="row">
                 <br />
@@ -83,7 +90,7 @@
                         <img src="assets/images/soluciones/agritracer.svg" class="img-responsive" />
                     </div>
                     <div class="content-ver-solucion">
-                        <a href="#Agritracer" key="VER_SOLUCION" class="lang titulo-app">Ver Solución</a>
+                        <input type="button" key="VER_SOLUCION" class="lang titulo-app" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('Agritracer')" />
                         <!--<input type="button" key="VER_SOLUCION" class="lang titulo-app" value="Ver Solución" onclick="window.open('https://agritracer.pe/', '_blank')" />-->
                     </div>
                 </div>
@@ -93,8 +100,7 @@
                     </div>
                     <div class="content-ver-solucion">
                         <!--<input type="button" key="VER_SOLUCION" class="lang titulo-app" value="Ver Solución" onclick="window.open('https://rhsys.pe/', '_blank')" />-->
-                        <a href="#rhsys" key="VER_SOLUCION" class="lang titulo-app">Ver Solución</a>
-                        <!--<input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('Agritracer')" />-->
+                        <input type="button" class="titulo-app" data-toggle="modal" data-target="#exampleModal" value="Ver Solución" onclick="goToModal('RHSYS')" />
                     </div>
                 </div>
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
@@ -145,7 +151,7 @@
         </div>
     </div>
     <!-- ######## software-factory ####### -->
-    <!-- ######## Agritracer ####### -->
+    <!-- ######## Agritracer ####### 
     <div id="Agritracer">
         <div class="container">
             <div>
@@ -156,12 +162,12 @@
                 <p key="AGRITRACER_PLATAFORMA" class="lang subtitulo-app-agritracer"><b>Plataforma de Soporte a la Gestión Agrícola</b></p>
                 <p key="AGRITRACER_DESC" class="lang">Plataforma compuesta por distintos <b>módulos totalmente administrables</b> y necesarios para la integración de información sobre las distintas actividades agrarias, mediante el uso de <b>tecnología Web y Móvil bajo la modalidad SaaS.</b></p>
                 </br>
-                <input type="button" class="titulo-app" value="Ver Detalle" onclick="window.open('https://agritracer.pe/', '_blank')" />
+                <input type="button" class="titulo-app" value="Más Detalle" onclick="window.open('https://agritracer.pe/', '_blank')" />
             </div>
         </div>
     </div>
-    <!-- ######## Agritracer ####### -->
-    <!-- ######## rhsys ####### -->
+     ######## Agritracer ####### -->
+    <!-- ######## rhsys ####### 
     <div id="rhsys">
         <div class="row sec-title">
             <div class="row">
@@ -178,11 +184,11 @@
             <div>
                 <p key="RHSYS_DESC1" class="lang">Plataforma que cuenta con el motor de <b>cálculo de planillas </b>y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.</p>
                 <p key="RHSYS_DESC2" class="lang">Contiene una serie de módulos que integra <b>Agritracer: Mano de Obra con el tareo agrícola,</b> basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.</p>
-                <input type="button" class="titulo-app" value="Ver Detalle" onclick="window.open('https://rhsys.pe/', '_blank')" />
+                <input type="button" class="titulo-app" value="Más Detalle" onclick="window.open('https://rhsys.pe/', '_blank')" />
             </div>
         </div>
     </div>
-    <!-- ######## rhsys ####### -->
+     ######## rhsys ####### -->
     <!-- ######## copy ####### -->
     <div class="copy">
         <div class="container">
@@ -206,19 +212,28 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <label style="padding: 15px;">
-                      <b id="content-modal-subtitle" style="text-align: justify;text-indent: 25px;"></b>
-                    </label>
-                    <br />
-                    <p id="content-modal-resume" style="text-align: justify;text-indent: 25px;"></p>
-                    <embed id="verFolletodd" src="assets/files/BROCHURE-WorkAPP.pdf" type="application/pdf" width="100%" height="600px" />
+                <div class="modal-body row">
+                    <div class="col-sm-6">
+                        <img id="modal-imagen" src="#" alt="">
+                    </div>
+                    <div class="col-sm-6" style="display: flex; align-items: center;">
+                        <div>
+                            <label>
+                                <b id="content-modal-subtitle" key="RHSYS_DESC1" class="lang" style="text-align: left;"></b>
+                              </label>
+                            <p id="content-modal-resume1" key="RHSYS_DESC2" class="lang" style="text-align: left;"></p>
+                            <p id="content-modal-resume2" key="RHSYS_DESC2" class="lang" style="text-align: left;"></p>
+                            <br />
+                            <p id="content-modal-resume3" key="RHSYS_DESC2" class="lang" style="text-align: left;margin-bottom: 30px;"></p>
+                            <a id="verFolleto" class="folleto btn" target="_blank" href="">
+                                <i class="fas fa-file-pdf" style="color:#fff;"></i>&nbsp; <span key="BROCHURE" class="lang">Más Detalle</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <a id="verFolleto" class="folleto btn" target="_blank" href="assets/files/brochure-genesys.pdf">
-                        <i class="fas fa-file-pdf" style="color:#fff;"></i>&nbsp; <span key="BROCHURE" class="lang">VER FOLLETO</span>
-                    </a>
-                    <button key="BUTTON_MODAL" type="button" class="lang btn btn-success" data-dismiss="modal">CERRAR</button>
+                    <!--<button key="BUTTON_MODAL" type="button" class="lang btn btn-success" data-dismiss="modal">CERRAR</button>-->
                 </div>
             </div>
         </div>

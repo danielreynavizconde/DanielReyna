@@ -107,7 +107,6 @@ h2 {
     box-sizing: border-box;
     float: left;
     margin: 0px;
-    padding: 50px 0px;
     color: #666;
     font-family: 'Montserrat', sans-serif;
 }
@@ -153,14 +152,13 @@ p {
 
 .sec-title {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 70px 0px 5px 0px;
 }
 
 .sec-title h2 {
     text-align: right;
     font-size: 40px;
     text-transform: none;
-    color: #f8b034;
 }
 
 .sec-title h3 {
@@ -844,7 +842,7 @@ header .header-nav .nav-item ul li a {
 #software-factory {
     float: left;
     width: 100%;
-    padding: 50px 0px;
+    padding: 70px 0px 50px 0px;
 }
 
 #software-factory .container div {
@@ -868,6 +866,7 @@ header .header-nav .nav-item ul li a {
     float: left;
     width: 100%;
     margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width: 500px) {
@@ -1003,15 +1002,13 @@ header .header-nav .nav-item ul li a {
     text-transform: none;
     text-align: left;
     color: #91bf3d;
-    padding: 0px 30px;
+    padding: 0px 0px;
     float: left;
-    height: 90px;
 }
 
 .meeting-room .sec-title img {
     float: left;
-    height: 100px;
-    margin: 50px 0px;
+    height: 110px;
 }
 
 .meeting-room table {
@@ -1063,7 +1060,7 @@ header .header-nav .nav-item ul li a {
 }
 
 .titulo-app {
-    width: 200px;
+    width: 180px;
     font-size: 18px;
     background: #91bf3d;
     color: #fff !important;
@@ -1073,6 +1070,10 @@ header .header-nav .nav-item ul li a {
     border: solid 1px #91bf3d;
     outline: none;
     border-radius: 5px;
+    background-image: url("../images/derecha.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: bold;
 }
 
 .titulo-app:focus {
@@ -1318,7 +1319,7 @@ header .header-nav .nav-item ul li a {
 .cont-records {
     float: left;
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 .record {
@@ -1367,6 +1368,7 @@ header .header-nav .nav-item ul li a {
     border-radius: 5px;
     font-size: 20px;
     margin: 0px auto;
+    margin-top: 70px;
     font-weight: 600;
     background-image: url("../images/derecha.svg");
     background-repeat: no-repeat;
@@ -1452,7 +1454,7 @@ header .header-nav .nav-item ul li a {
 .cont-records2 {
     float: left;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .record2 {
@@ -1611,7 +1613,7 @@ header .header-nav .nav-item ul li a {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
-    padding: 90px 0px 70px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 .contact-us .contat-det {
@@ -1765,20 +1767,20 @@ header .header-nav .nav-item ul li a {
     width: 100%;
     text-align: center;
     margin-top: 73px;
+    padding: 50px;
 }
 
 .page-nav img {
     float: left;
-    width: 500px;
+    width: 470px;
     margin: 0px auto;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .page-nav h2 {
     font-size: 38px;
     width: 100%;
     color: #ffffff;
-    font-weight: 600;
 }
 
 .page-nav ul {
@@ -2479,4 +2481,14 @@ header .header-nav .nav-item ul li a {
         line-height: 30px;
         padding: 0px 0px 0px;
     }
+}
+
+#modal-imagen {
+    float: left;
+    width: 90%;
+    max-height: 400px;
+}
+
+#content-modal-subtitle {
+    float: left;
 }

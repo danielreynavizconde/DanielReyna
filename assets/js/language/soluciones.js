@@ -15,6 +15,8 @@ var arrLang = {
         'RHSYS_SLOGAN': 'Payroll Management Platform',
         'RHSYS_DESC1': 'Platform that has the payroll calculation engine and multiple functionalities of the different labor regimes, solid, agile and safe for any volume of personnel and with great performance of processing.',
         'RHSYS_DESC2': 'It contains a series of modules that Agritracer integrates: Labor with agricultural work, based on criteria for accounting for hours (wages) or bonuses configured by the same users.',
+        'SOLUCIONES': 'Solutions',
+        'COMO_SERVICIO': 'as a service (SaaS)',
 
         'BROCHURE': 'SEE BROCHURE',
         'BUTTON_MODAL': 'CLOSE',
@@ -34,7 +36,8 @@ var arrLang = {
         'RHSYS_SLOGAN': 'Plataforma de Gestión de Nómina',
         'RHSYS_DESC1': 'Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.',
         'RHSYS_DESC2': 'Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.',
-
+        'SOLUCIONES': 'Soluciones',
+        'COMO_SERVICIO': 'como servicio (SaaS)',
         'BROCHURE': 'Ver BROCHURE',
         'BUTTON_MODAL': 'Cerrar',
         'FOOTER_COPY': '© Diseñado por YAPU Solutions | Copyright 2020'
@@ -63,13 +66,24 @@ function goToModal(title) {
     switch (title) {
         case 'Agritracer':
             item = '1';
-            $('#verFolleto').attr('href', 'assets/files/brochure-genesys.pdf');
-            $('#verFolleto').show();
+            $('#content-modal-subtitle').text('Plataforma de Soporte a la Gestión Agrícola');
+            $('#content-modal-resume1').text('Plataforma compuesta por distintos módulos totalmente administrables y necesarios para la integración de información sobre las distintas actividades agrarias, mediante el uso de tecnología Web y Móvil bajo la modalidad SaaS.');
+            $('#content-modal-resume2').text('');
+            $('#content-modal-resume3').text('');
 
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/mockup-agritracer.png');
+            $('#verFolleto').attr('href', 'https://agritracer.pe/');
+            $('#verFolleto').show();
             break;
 
         case 'WorkAPP':
             item = '2';
+            $('#content-modal-subtitle').text('Aplicación para la comunicación activacon los trabajadores y postulantes.');
+            $('#content-modal-resume1').text('ACCESO A TRABAJADORES: El trabajador puede aportarcon sugerencias y tener acceso a boletas, licencias, vacaciones, comunicados y encuestas');
+            $('#content-modal-resume2').text('ACCESO A EXTERNOS: Permite el registro de los usuariosinteresados en las convocatorias programadas.');
+            $('#content-modal-resume3').text('ADAPTABLEA DISPOSITIVOSMÓVILES: Adaptado a todo tipo de dispositivomóvil.');
+
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/workapp.jpg');
             $('#verFolleto').attr('src', 'assets/files/BROCHURE-WorkAPP.pdf');
             $('#verFolleto').hide();
 
@@ -77,9 +91,13 @@ function goToModal(title) {
 
         case 'RHSYS':
             item = '3';
-            $('#verFolleto').attr('href', '#');
-            $('#verFolleto').hide();
-
+            $('#content-modal-subtitle').text('');
+            $('#content-modal-resume1').text('');
+            $('#content-modal-resume2').text('Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.');
+            $('#content-modal-resume3').text('Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.');
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/laptop-rhsys.jpg');
+            $('#verFolleto').attr('href', 'https://rhsys.pe/');
+            $('#verFolleto').show();
             break;
     }
     $('#content-modal-subtitle').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_SUBTITULO']);
