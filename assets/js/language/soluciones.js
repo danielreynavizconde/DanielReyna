@@ -18,7 +18,14 @@ var arrLang = {
         'SOLUCIONES': 'Solutions',
         'COMO_SERVICIO': 'as a service (SaaS)',
 
-        'BROCHURE': 'SEE BROCHURE',
+        'SOLUTIONS_ITEM_1_P1': 'Support Platform for Agricultural Management',
+        'SOLUTIONS_ITEM_1_P2': 'Platform composed of different modules that are fully administrable and necessary for the integration of information on the different agricultural activities, through the use of Web and Mobile technology under the SaaS modality.',
+
+
+        'SOLUTIONS_ITEM_3_P1': 'Platform that has the payroll calculation engine and multiple functionalities of the different labor regimes, solid, agile and safe for any volume of personnel and with great performance of processing.',
+        'SOLUTIONS_ITEM_3_P2': 'It contains a series of modules that Agritracer integrates: Labor with agricultural work, based on criteria for accounting for hours (wages) or bonuses configured by the same users.',
+
+        'BROCHURE': 'More Detail',
         'BUTTON_MODAL': 'CLOSE',
         'FOOTER_COPY': '© Designed by YAPU Solutions | Copyright 2020'
     },
@@ -38,7 +45,15 @@ var arrLang = {
         'RHSYS_DESC2': 'Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.',
         'SOLUCIONES': 'Soluciones',
         'COMO_SERVICIO': 'como servicio (SaaS)',
-        'BROCHURE': 'Ver BROCHURE',
+
+        'SOLUTIONS_ITEM_1_P1': 'Plataforma de Soporte a la Gestión Agrícola',
+        'SOLUTIONS_ITEM_1_P2': 'Plataforma compuesta por distintos módulos totalmente administrables y necesarios para la integración de información sobre las distintas actividades agrarias, mediante el uso de tecnología Web y Móvil bajo la modalidad SaaS.',
+
+
+        'SOLUTIONS_ITEM_3_P1': 'Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.',
+        'SOLUTIONS_ITEM_3_P1': 'Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.',
+
+        'BROCHURE': 'Más detalle',
         'BUTTON_MODAL': 'Cerrar',
         'FOOTER_COPY': '© Diseñado por YAPU Solutions | Copyright 2020'
     }
@@ -66,13 +81,10 @@ function goToModal(title) {
     switch (title) {
         case 'Agritracer':
             item = '1';
-            $('#content-modal-subtitle').text('Plataforma de Soporte a la Gestión Agrícola');
-            $('#content-modal-resume1').text('Plataforma compuesta por distintos módulos totalmente administrables y necesarios para la integración de información sobre las distintas actividades agrarias, mediante el uso de tecnología Web y Móvil bajo la modalidad SaaS.');
-            $('#content-modal-resume2').text('');
-            $('#content-modal-resume3').text('');
+            $('#content-modal-p1').text('Plataforma de Soporte a la Gestión Agrícola');
+            $('#content-modal-p2').text('Plataforma compuesta por distintos módulos totalmente administrables y necesarios para la integración de información sobre las distintas actividades agrarias, mediante el uso de tecnología Web y Móvil bajo la modalidad SaaS.')
 
             $('#modal-imagen').attr('src', 'assets/images/soluciones/mockup-agritracer.png');
-
             $('#modal-imagen1').attr('src', '');
             $('#modal-imagen2').attr('src', '');
             $('#modal-imagen3').attr('src', '');
@@ -86,11 +98,10 @@ function goToModal(title) {
 
         case 'WorkAPP':
             item = '2';
-            $('#content-modal-subtitle').text('');
-            $('#content-modal-resume1').text('');
-            $('#content-modal-resume2').text('');
-            $('#content-modal-resume3').text('');
+            $('#content-modal-p1').text('');
+            $('#content-modal-p2').text('');
 
+            $('#modal-imagen').attr('src', '');
             $('#modal-imagen1').attr('src', 'assets/files/workapp1.JPG');
             $('#modal-imagen2').attr('src', 'assets/files/workapp2.JPG');
             $('#modal-imagen3').attr('src', 'assets/files/workapp3.JPG');
@@ -98,7 +109,6 @@ function goToModal(title) {
             $('#modal-imagen5').attr('src', 'assets/files/workapp5.JPG');
             $('#modal-imagen6').attr('src', 'assets/files/workapp6.JPG');
 
-            $('#modal-imagen').attr('src', '');
             $('#verFolleto').attr('src', 'assets/files/BROCHURE-WorkAPP.pdf');
             $('#verFolleto').hide();
 
@@ -106,12 +116,10 @@ function goToModal(title) {
 
         case 'RHSYS':
             item = '3';
-            $('#content-modal-subtitle').text('');
-            $('#content-modal-resume1').text('');
-            $('#content-modal-resume2').text('Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.');
-            $('#content-modal-resume3').text('Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.');
-            $('#modal-imagen').attr('src', 'assets/images/soluciones/laptop-rhsys.jpg');
+            $('#content-modal-p1').text('Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.');
+            $('#content-modal-p2').text('Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.');
 
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/laptop-rhsys.jpg');
             $('#modal-imagen1').attr('src', '');
             $('#modal-imagen2').attr('src', '');
             $('#modal-imagen3').attr('src', '');
@@ -123,6 +131,6 @@ function goToModal(title) {
             $('#verFolleto').show();
             break;
     }
-    $('#content-modal-subtitle').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_SUBTITULO']);
-    $('#content-modal-resume').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_TEXTO']);
+    $('#content-modal-p1').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_P1']);
+    $('#content-modal-p2').text(arrLang[language_select]['SOLUTIONS_ITEM_' + item + '_P2']);
 }
