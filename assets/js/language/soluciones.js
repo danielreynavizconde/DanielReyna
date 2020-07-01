@@ -110,7 +110,7 @@ function goToModal(title) {
             $('#content-modal-resume1').text('');
             $('#content-modal-resume2').text('Plataforma que cuenta con el motor de cálculo de planillas y múltiples funcionalidades de los distintos regímenes laborales, sólida, ágil y segura para cualquier volumen de personal y con gran perfomance de procesamiento.');
             $('#content-modal-resume3').text('Contiene una serie de módulos que integra Agritracer: Mano de Obra con el tareo agrícola, basado en criterios de contabilización de horas(jornales) u bonos configurado por los mismos usuarios.');
-            $('#modal-imagen').attr('src', 'assets/files/workapp1.jpg');
+            $('#modal-imagen').attr('src', 'assets/images/soluciones/laptop-rhsys.jpg');
 
             $('#modal-imagen1').attr('src', '');
             $('#modal-imagen2').attr('src', '');
