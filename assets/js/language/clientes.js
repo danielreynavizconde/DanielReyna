@@ -9,6 +9,10 @@ var arrLang = {
         'PAISES': 'COUNTRIES',
         'CLIENTES': 'CLIENTS',
         'PERSONAS_BENEFICIADAS': 'PEOPLE BENEFITED',
+
+        'SOLUCIONES': 'Implemented  ',
+        'IMPLEMENTADAS': 'Solutions',
+
         'FOOTER_COPY': '© Designed by YAPU Solutions | Copyright 2020'
     },
     'es': {
@@ -21,6 +25,10 @@ var arrLang = {
         'PAISES': 'PAÍSES',
         'CLIENTES': 'CLIENTES',
         'PERSONAS_BENEFICIADAS': 'PERSONAS BENEFICIADAS',
+
+        'SOLUCIONES': 'Soluciones  ',
+        'IMPLEMENTADAS': 'implementadas',
+
         'FOOTER_COPY': '© Diseñado por YAPU Solutions | Copyright 2020'
     }
 }
