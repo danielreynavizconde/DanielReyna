@@ -91,12 +91,12 @@ function goToModal(title) {
             $('#content-modal-resume2').text('');
             $('#content-modal-resume3').text('');
 
-            $('#modal-imagen1').attr('src', 'assets/files/workapp1.jpg');
-            $('#modal-imagen2').attr('src', 'assets/files/workapp2.jpg');
-            $('#modal-imagen3').attr('src', 'assets/files/workapp3.jpg');
-            $('#modal-imagen4').attr('src', 'assets/files/workapp4.jpg');
-            $('#modal-imagen5').attr('src', 'assets/files/workapp5.jpg');
-            $('#modal-imagen6').attr('src', 'assets/files/workapp6.jpg');
+            $('#modal-imagen1').attr('src', 'assets/files/workapp1.JPG');
+            $('#modal-imagen2').attr('src', 'assets/files/workapp2.JPG');
+            $('#modal-imagen3').attr('src', 'assets/files/workapp3.JPG');
+            $('#modal-imagen4').attr('src', 'assets/files/workapp4.JPG');
+            $('#modal-imagen5').attr('src', 'assets/files/workapp5.JPG');
+            $('#modal-imagen6').attr('src', 'assets/files/workapp6.JPG');
 
             $('#modal-imagen').attr('src', '');
             $('#verFolleto').attr('src', 'assets/files/BROCHURE-WorkAPP.pdf');
